@@ -3,4 +3,3 @@
 -c constraints.txt
 
 tox                       # Virtualenv management for tests
-xblock-sdk

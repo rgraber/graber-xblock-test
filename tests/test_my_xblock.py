@@ -1,7 +1,6 @@
 """
 Tests for pipeline.py
 """
-from unittest.mock import Mock
 
 from django.test import TestCase
 from my_xblock import MyXBlock
@@ -9,9 +8,6 @@ from xblock.test.toy_runtime import ToyRuntime
 from xblock.fields import ScopeIds
 
 class TestMyXBlock(TestCase):
-    def setUp(self) -> None:
-        self.maxDiff = None
-
     def test_my_student_view(self):
         scope_ids = ScopeIds('1','2','3','4')
         block = MyXBlock(ToyRuntime(), scope_ids=scope_ids)
